@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ProtectedRoute from './components/ProtectedRoute'
 import Login from "./pages/Login"; 
+import ContactPage from './pages/ContactPage'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/success" element={<PaymentSuccess />} />
         <Route path="/cancel" element={<PaymentCancel />} />
